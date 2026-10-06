@@ -8,7 +8,7 @@ from langchain_core.output_parsers import StrOutputParser
 from tools.tools import do_web_search, scrape_url
 
 llm = ChatGroq(
-    model="openai/gpt-oss-120b",
+    model="openai/gpt-oss-20b",
     temperature=0.2,
     max_retries=2,
 )
@@ -67,4 +67,5 @@ critic_prompt = ChatPromptTemplate.from_messages([
         ...
 """
 ),])
-critic_chain = critic_prompt| llm | StrOutputParser()
+
+critic_runnable = critic_prompt| llm | StrOutputParser()
