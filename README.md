@@ -170,5 +170,6 @@ The UI provides three sections:
 ## 👩‍💻 Author
 
 **Naina Dugar**
+
 Computer Science & Data Analytics Student  
 Interested in **AI Engineering, Agentic AI, and Full-Stack Development**.
